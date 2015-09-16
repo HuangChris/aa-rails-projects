@@ -1,0 +1,20 @@
+<h1>Cat request #<%= @request.id %></h1>
+
+<table>
+  <tr>
+    <td><strong>Cat Name</strong></td>
+    <td><%=  @request.cat.name %></td>
+  </tr>
+  <tr>
+    <td><strong>Start Date</strong></td>
+    <td><%= @request.start_date %></td>
+  </tr>
+  <tr>
+    <td><strong>End Date</strong></td>
+    <td><%= @request.end_date %></td>
+  </tr>
+  <tr>
+    <td><strong>Status</td></strong>
+    <td><%= @request.status.downcase.capitalize %></td>
+  </tr>
+</table>
